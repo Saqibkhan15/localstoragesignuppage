@@ -3,33 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup/Login</title>
     <link rel="stylesheet" href="style.css">
-    <title>Get data local storage</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <div class="container1">
-        <h2>Sign up page</h2>
+    <div class="container">
+        <h2 id="formTitle">Signup</h2>
         <form id="signupForm">
-            <div class="formgroup">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" >
-            </div>
-            <div class="formgroup">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" >
-            </div>
-            <div class="formgroup">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" >
-            </div>
-            <button type="submit" class="btn">sign up</button>
+            <input type="text" name="name" placeholder="Name" ><br>
+            <input type="email" name="email" placeholder="Email" ><br>
+            <input type="password" name="password" placeholder="Password" ><br>
+            <button type="submit">Signup</button>
+        </form>
+        
+        <form id="loginForm" class="hidden">
+            <input type="email" name="email" placeholder="Email" ><br>
+            <input type="password" name="password" placeholder="Password" ><br>
+            <button type="submit">Login</button>
         </form>
     </div>
-
-<button type="submit" class="home"> home  </button>
-
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 </body>
 </html>
